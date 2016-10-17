@@ -4,10 +4,13 @@ This repository hosts the R code and documentation files for the Data Science's 
 
 # Files
 
-You should create one R script called run_analysis.R that does the following.
+The R script "run_analyis.r" written for the Geting and Cleaning Data final project does the following:
 
-Merges the training and the test sets to create one data set.
-Extracts only the measurements on the mean and standard deviation for each measurement.
-Uses descriptive activity names to name the activities in the data set
-Appropriately labels the data set with descriptive variable names.
-From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+Sets working directory to a folder in your current directory called "RunAnalyis". The zip folder containing the project data is downloaded and extracted here.
+All files in the extracted folder are read into R and assigned a name in the environment.
+Column names are defined.
+All training data files are merged together and all test files are merged together. These consolidated dataframes are then merged.
+Mean and Standard Deviation columns are extracted and a subset of data is created.
+Column names are standardized and unnecessary symbols removed.
+Means are calculated and a tidy data set is exported.
+The result of this script should be a file called "tidy.txt" that is saved in the "RunAnalysis" folder.
